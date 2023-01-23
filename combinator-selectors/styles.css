@@ -1,0 +1,78 @@
+/* descendant selector */
+
+div .para{
+    color: red;
+}
+
+.container #para-1{
+    color: blue;
+}
+
+ul li{
+    background-color: pink;
+}
+
+/* general sibling (~) */
+
+div ~ p{
+    color: blueviolet;
+}
+
+div + p{
+    color: magenta;
+}
+
+div > p{
+    color:brown
+}
+
+
+/* pseudo-class selector */
+
+.btn{
+    background-color: orange;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+.btn:hover{
+    background-color: darkorange;
+    color: white;
+}
+
+.link:active{
+    color: orangered;
+}
+
+/* pseudo-element selector 
+1. ::first-line
+2. ::before
+3. ::after
+4. ::first-letter */
+p::first-letter{
+    color: green;
+}
+
+.square-circle {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border-radius: 50%;
+    background-color: blue;
+    overflow: hidden;
+    border: 10px solid blue; /* added */
+  }
+  .square-circle:before {
+    content: "";
+    width: 180px;
+    height: 180px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+  
+  

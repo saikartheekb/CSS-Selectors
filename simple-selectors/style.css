@@ -1,0 +1,15 @@
+*{
+    background-color: black;
+}
+
+p{
+    color: violet;
+}
+
+.para{
+    color:yellow;
+}
+
+.para#heading{
+    color: deepskyblue;
+}
